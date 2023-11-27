@@ -1,0 +1,19 @@
+.myEducationContainer {
+  overflow-y: auto;
+  animation: fade-in 1s;
+  display: grid;
+
+  background: linear-gradient(135deg, #1d1e21 0, #3e4246 100%);
+  grid-template-columns: 1fr;
+
+  gap: 16px;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100;
+  }
+}

@@ -14,6 +14,9 @@ import { myBasicSkills } from "@/app/Data/myBasicSkills";
 
 // Components
 import CardForSkills from "./CardForSkills/CardForSkills";
+// Components
+
+// Data
 import { myProgrammingLanguageSkills } from "@/app/Data/myProgrammingLanguageSkills";
 import { myFrontEndSkills } from "@/app/Data/myFrontEndSkills";
 import { myBackEndSkills } from "@/app/Data/myBackEndSkills";
@@ -21,7 +24,7 @@ import { myDatabaseSkills } from "@/app/Data/myDatabaseSkills";
 import { myMobileSkills } from "@/app/Data/myMobileSkills";
 import { myDocumentationSkills } from "@/app/Data/myDocumentationSkills";
 import { myApiWritingSkills } from "@/app/Data/myApiWritingSkills";
-// Components
+// Data
 
 const page = () => {
   return (
@@ -32,9 +35,7 @@ const page = () => {
         <p className={styles.containerName}>
           <span style={{ color: currTheme }}>My Self</span> Skills
         </p>
-        <div
-          className={`${styles.skillsProgressContainer} w-full flex flex-row items-center flex-wrap justify-between`}
-        >
+        <div className={`${styles.skillsProgressContainer} w-full `}>
           {mySelfSkills.map((item) => {
             return (
               <CardForSkills key={item.id} item={item} themeColor={currTheme} />
@@ -46,9 +47,7 @@ const page = () => {
         <p className={styles.containerName}>
           <span style={{ color: currTheme }}>Basic</span> Skills
         </p>
-        <div
-          className={`${styles.skillsProgressContainer} w-full flex flex-row items-center flex-wrap justify-between`}
-        >
+        <div className={`${styles.skillsProgressContainer} w-full `}>
           {myBasicSkills.map((item) => {
             return (
               <CardForSkills key={item.id} item={item} themeColor={currTheme} />
@@ -60,9 +59,7 @@ const page = () => {
         <p className={styles.containerName}>
           <span style={{ color: currTheme }}>Programming</span> Skills
         </p>
-        <div
-          className={`${styles.skillsProgressContainer} w-full flex flex-row items-center flex-wrap justify-between`}
-        >
+        <div className={`${styles.skillsProgressContainer} w-full `}>
           {myProgrammingLanguageSkills.map((item) => {
             return (
               <CardForSkills key={item.id} item={item} themeColor={currTheme} />
@@ -74,9 +71,7 @@ const page = () => {
         <p className={styles.containerName}>
           <span style={{ color: currTheme }}>Front-End </span> Skills
         </p>
-        <div
-          className={`${styles.skillsProgressContainer} w-full flex flex-row items-center flex-wrap justify-between`}
-        >
+        <div className={`${styles.skillsProgressContainer} w-full `}>
           {myFrontEndSkills.map((item) => {
             return (
               <CardForSkills key={item.id} item={item} themeColor={currTheme} />
@@ -89,9 +84,7 @@ const page = () => {
           <span style={{ color: currTheme }}>Back-End</span> Skills{" "}
           <span style={{ color: currTheme }}> {"( Learning )"} </span>
         </p>
-        <div
-          className={`${styles.skillsProgressContainer} w-full flex flex-row items-center flex-wrap justify-between`}
-        >
+        <div className={`${styles.skillsProgressContainer} w-full `}>
           {myBackEndSkills.map((item) => {
             return (
               <CardForSkills key={item.id} item={item} themeColor={currTheme} />
@@ -104,9 +97,7 @@ const page = () => {
           <span style={{ color: currTheme }}>Data Base </span> Skills
           <span style={{ color: currTheme }}> {"( Learning )"} </span>
         </p>
-        <div
-          className={`${styles.skillsProgressContainer} w-full flex flex-row items-center flex-wrap justify-between`}
-        >
+        <div className={`${styles.skillsProgressContainer} w-full `}>
           {myDatabaseSkills.map((item) => {
             return (
               <CardForSkills key={item.id} item={item} themeColor={currTheme} />
@@ -119,9 +110,7 @@ const page = () => {
           <span style={{ color: currTheme }}>Mobile Developing</span> Skills
           <span style={{ color: currTheme }}> {"( Learning )"} </span>
         </p>
-        <div
-          className={`${styles.skillsProgressContainer} w-full flex flex-row items-center flex-wrap justify-between`}
-        >
+        <div className={`${styles.skillsProgressContainer} w-full `}>
           {myMobileSkills.map((item) => {
             return (
               <CardForSkills key={item.id} item={item} themeColor={currTheme} />
@@ -134,9 +123,7 @@ const page = () => {
           <span style={{ color: currTheme }}>Documenting </span> Skills
           <span style={{ color: currTheme }}> {"( Learning )"} </span>
         </p>
-        <div
-          className={`${styles.skillsProgressContainer} w-full flex flex-row items-center flex-wrap justify-between`}
-        >
+        <div className={`${styles.skillsProgressContainer} w-full `}>
           {myDocumentationSkills.map((item) => {
             return (
               <CardForSkills key={item.id} item={item} themeColor={currTheme} />
@@ -149,9 +136,7 @@ const page = () => {
           <span style={{ color: currTheme }}>Api Writing </span> Skills
           <span style={{ color: currTheme }}> {"( Learning )"} </span>
         </p>
-        <div
-          className={`${styles.skillsProgressContainer} w-full flex flex-row items-center flex-wrap justify-between`}
-        >
+        <div className={`${styles.skillsProgressContainer} w-full `}>
           {myApiWritingSkills.map((item) => {
             return (
               <CardForSkills key={item.id} item={item} themeColor={currTheme} />

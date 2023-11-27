@@ -34,12 +34,15 @@ const CardForSkills: React.FunctionComponent<CardForSkillsProps> = ({
         </p>
       </div>
       <div
-        className={styles.likeProgress}
+        className={`${styles.likeProgress} mt-2`}
         style={{
           background: "#1d1e21e1",
         }}
       >
-        <div style={{ width: `${value}%` }} className={styles.inner}></div>
+        <div
+          style={{ width: `${value}%` }}
+          className={`${styles.inner} `}
+        ></div>
       </div>
     </div>
   );

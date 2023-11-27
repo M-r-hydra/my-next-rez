@@ -6,7 +6,6 @@
 
   .selfSkills {
     border-bottom: 1px solid rgba(255, 255, 255, 0.6);
-    padding: 6px;
     margin-top: 5rem;
     .containerName {
       font: {
@@ -24,6 +23,11 @@
     &:first-of-type {
       margin-top: 0px !important;
     }
+
+    .skillsProgressContainer {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
   }
 }
 
@@ -33,5 +37,17 @@
   }
   to {
     opacity: 100;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .skillsProgressContainer {
+    grid-template-columns: 1fr 1fr !important;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .skillsProgressContainer {
+    grid-template-columns: 1fr !important;
   }
 }

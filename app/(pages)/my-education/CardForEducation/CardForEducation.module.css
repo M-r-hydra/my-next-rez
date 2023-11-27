@@ -1,0 +1,46 @@
+.cardContainer {
+  width: 100%;
+  margin-top: 2vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  border-radius: 0.5rem;
+  padding: 16px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid transparent;
+  transition: 0.1s ease all;
+}
+.cardContainer:hover {
+  border: 2px solid rgb(238, 97, 146);
+}
+.cardContainer .left {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.cardContainer .left .top .name,
+.cardContainer .left .top span {
+  font-family: popins-regular;
+  font-weight: bold;
+  transition: 0.1s ease all;
+}
+.cardContainer .left .teacherName {
+  transition: 0.1s ease all;
+  margin-top: 1rem;
+  font-weight: bold;
+  color: #fff;
+}
+.cardContainer .left .teacherName span {
+  font-weight: 400;
+  transition: 0.1s ease all;
+}
+.cardContainer .right {
+  padding-right: 2rem;
+}
+.cardContainer .right svg {
+  font-size: 2rem;
+}/*# sourceMappingURL=CardForEducation.module.css.map */

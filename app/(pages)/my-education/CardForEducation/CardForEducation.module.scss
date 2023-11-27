@@ -1,0 +1,59 @@
+.cardContainer {
+  width: 100%;
+  margin-top: 2vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  border-radius: 0.5rem;
+  padding: 16px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid transparent;
+  transition: 0.1s ease all;
+  &:hover {
+    border: 2px solid rgb(238, 97, 146);
+  }
+  .left {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    .top {
+      .name,
+      span {
+        font : {
+          family: popins-regular;
+          weight: bold;
+        }
+        transition: 0.1s ease all;
+      }
+    }
+    .teacherName {
+      transition: 0.1s ease all;
+      margin-top: 1rem;
+      font : {
+        weight: bold;
+      }
+      span {
+        font : {
+          weight: 400;
+        }
+        transition: 0.1s ease all;
+      }
+      color: #fff;
+    }
+  }
+  .right {
+    padding: {
+      right: 2rem;
+    }
+    svg {
+      font : {
+        size: 2rem;
+      }
+    }
+  }
+}
