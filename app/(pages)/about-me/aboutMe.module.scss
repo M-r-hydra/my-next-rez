@@ -1,0 +1,31 @@
+.aboutMeContainer {
+  animation: fade-in 1s;
+
+  background: linear-gradient(135deg, #1d1e21 0, #3e4246 100%);
+  overflow: auto;
+  .title {
+    font : {
+      size: 3rem;
+    }
+    color: rgba(204, 204, 204, 0.116);
+    font : {
+      size: 6rem;
+      family: "popins-bold";
+    }
+  }
+  .aboutMe {
+    color: #fff;
+    font : {
+      size: 1.3rem;
+    }
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100;
+  }
+}

@@ -1,0 +1,20 @@
+.homeContainer {
+  animation: fade-in 1s;
+  background-image: linear-gradient(rgba(38, 38, 40, 0.6509803922), rgba(38, 38, 40, 0.6509803922)), url("./Images/main-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.homeContainer .myName {
+  font-size: 3rem;
+  color: #fff;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100;
+  }
+}/*# sourceMappingURL=home.module.css.map */

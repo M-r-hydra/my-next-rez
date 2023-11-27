@@ -1,0 +1,30 @@
+.mySkillsContainer {
+  overflow-y: auto;
+  animation: fade-in 1s;
+  background: linear-gradient(135deg, #1d1e21 0, #3e4246 100%);
+}
+.mySkillsContainer .selfSkills {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+  padding: 6px;
+  margin-top: 5rem;
+}
+.mySkillsContainer .selfSkills .containerName {
+  font-size: 2rem;
+  color: #fff;
+}
+.mySkillsContainer .selfSkills .containerName span:nth-child(2) {
+  font-size: 14px !important;
+  margin-left: 12px;
+}
+.mySkillsContainer .selfSkills:first-of-type {
+  margin-top: 0px !important;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100;
+  }
+}/*# sourceMappingURL=mySkills.module.css.map */

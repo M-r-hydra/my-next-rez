@@ -1,0 +1,28 @@
+@font-face {
+  font-family: main-font-regular;
+  src: url("./Fonts/CormorantGaramond-Regular.ttf");
+}
+@font-face {
+  font-family: main-font-bold;
+  src: url("./Fonts/CormorantGaramond-Bold.ttf");
+}
+@font-face {
+  font-family: popins-regular;
+  src: url("./Fonts/Poppins-Regular.ttf");
+}
+@font-face {
+  font-family: popins-bold;
+  src: url("./Fonts/Poppins-Bold.otf");
+}
+html {
+  scroll-behavior: smooth !important;
+}
+html:focus-within {
+  scroll-behavior: smooth !important;
+}
+
+* {
+  font : {
+    family: popins-regular;
+  }
+}

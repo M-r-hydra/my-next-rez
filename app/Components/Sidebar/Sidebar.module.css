@@ -1,0 +1,15 @@
+.sidebarContainer {
+  width: 50px;
+  height: 100vh;
+  background-color: #181818;
+}
+.sidebarContainer p {
+  color: #fff;
+  margin-top: 0.8rem;
+  font-size: 32px;
+}
+.sidebarContainer svg {
+  font-size: 2rem;
+  fill: #fff;
+  margin-top: 1rem;
+}/*# sourceMappingURL=Sidebar.module.css.map */
