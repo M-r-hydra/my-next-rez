@@ -53,12 +53,12 @@ const ChangeLinksColor = () => {
   });
   return (
     <>
-      {isThemeSelectorInScreen ? (
+      {/* {isThemeSelectorInScreen ? (
         <ChangeTheme
           setTheme={setThemeColor}
           setIsThemeSelectorInScreen={setIsThemeSelectorInScreen}
         />
-      ) : null}
+      ) : null} */}
     </>
   );
 };
