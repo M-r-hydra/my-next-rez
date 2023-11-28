@@ -1,3 +1,7 @@
+// Next
+import { Metadata } from "next";
+// Next
+
 // React
 import React from "react";
 // React
@@ -25,6 +29,11 @@ import { myMobileSkills } from "@/app/Data/myMobileSkills";
 import { myDocumentationSkills } from "@/app/Data/myDocumentationSkills";
 import { myApiWritingSkills } from "@/app/Data/myApiWritingSkills";
 // Data
+
+export const metadata: Metadata = {
+  title: "Ali Goodarzi Skills",
+  description: "Im Ali Goodarzi , Im Mid-Level FrontEnd Web Developer",
+};
 
 const page = () => {
   return (

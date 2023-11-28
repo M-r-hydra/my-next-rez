@@ -16,7 +16,7 @@
   margin-left: 12px;
 }
 .mySkillsContainer .selfSkills:first-of-type {
-  margin-top: 0px !important;
+  margin-top: 1.25rem !important;
 }
 .mySkillsContainer .selfSkills .skillsProgressContainer {
   display: grid;

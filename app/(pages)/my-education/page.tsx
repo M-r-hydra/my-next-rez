@@ -1,3 +1,7 @@
+// Next
+import { Metadata } from "next";
+// Next
+
 // React
 import React from "react";
 // React
@@ -17,6 +21,11 @@ import CardForEducation from "./CardForEducation/CardForEducation";
 // Theme
 import { currTheme } from "@/app/Data/currTheme";
 // Theme
+
+export const metadata: Metadata = {
+  title: "Ali Goodarzi Education",
+  description: "Im Ali Goodarzi , Im Mid-Level FrontEnd Web Developer",
+};
 
 const page = () => {
   return (

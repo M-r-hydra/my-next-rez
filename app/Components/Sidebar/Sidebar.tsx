@@ -54,7 +54,7 @@ const Sidebar = () => {
       <Link
         href={"/my-education"}
         data-tooltip-id="my-tooltip"
-        data-tooltip-content="My Skills"
+        data-tooltip-content="My Education"
         data-href={"/my-education"}
       >
         <MdCastForEducation />

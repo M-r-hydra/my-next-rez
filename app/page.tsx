@@ -1,3 +1,7 @@
+// Next
+import { Metadata } from "next";
+// Next
+
 // React
 import React from "react";
 // React
@@ -10,6 +14,11 @@ import styles from "./home.module.css";
 // Components
 import TypeEffect from "./Route_ClientComponents/Home/TypeEffect/TypeEffect";
 // Components
+
+export const metadata: Metadata = {
+  title: "Ali Goodarzi Online CV",
+  description: "Im Ali Goodarzi , Im Mid-Level FrontEnd Web Developer",
+};
 
 const page = () => {
   return (

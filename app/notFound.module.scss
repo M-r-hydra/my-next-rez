@@ -1,0 +1,13 @@
+.notFoundContainer {
+  background: linear-gradient(
+      rgba(38, 38, 40, 0.6509803922),
+      rgba(38, 38, 40, 0.6509803922)
+    ),
+    url("./Images/main-bg.jpg") center no-repeat;
+
+  background-size: cover;
+
+  img {
+    background: rgba(255, 255, 255, 0.8);
+  }
+}

@@ -1,3 +1,5 @@
 import homeLogo from "./main-bg.jpg";
 
-export { homeLogo };
+import notFoundImage from "./404.png";
+
+export { homeLogo, notFoundImage };
