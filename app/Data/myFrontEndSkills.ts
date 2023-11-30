@@ -13,36 +13,36 @@ export const myFrontEndSkills = [
   {
     id: "frontEnd4",
     name: "React.Js ( .tsx )",
-    value: 85,
+    value: 90,
   },
   {
     id: "frontEnd5",
     name: "React Hooks",
-    value: 85,
+    value: 90,
   },
   {
     id: "frontEnd8",
     name: "PWA",
-    value: 75,
+    value: 80,
   },
   {
     id: "frontEnd7",
     name: "Tailwind",
-    value: 70,
+    value: 80,
   },
   {
     id: "frontEnd10",
-    name: "Redux( ToolKit )",
-    value: 60,
+    name: "Redux(TK|Thunk|Saga )",
+    value: 80,
   },
   {
     id: "frontEnd9",
     name: "ReactStrap + Bootstrap",
-    value: 60,
+    value: 65,
   },
   {
     id: "frontEnd8",
-    name: "Next.Js",
-    value: 40,
+    name: "Next.Js ( .tsx )",
+    value: 60,
   },
 ];

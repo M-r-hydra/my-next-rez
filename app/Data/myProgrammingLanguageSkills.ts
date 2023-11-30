@@ -7,7 +7,7 @@ export const myProgrammingLanguageSkills = [
   {
     id: "frontEnd6",
     name: "TypeScript",
-    value: 80,
+    value: 85,
   },
   {
     id: "frontEnd88",

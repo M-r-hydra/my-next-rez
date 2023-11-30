@@ -2,12 +2,12 @@ export const myBackEndSkills = [
   {
     id: "backend 1",
     name: "Node.Js",
-    value: 40,
+    value: 60,
   },
   {
     id: "backend 2",
     name: "Express.Js",
-    value: 30,
+    value: 40,
   },
   {
     id: "backend 10",
