@@ -9,21 +9,19 @@ import styles from "./TypeEffect.module.css";
 
 // Components
 import Typewriter from "typewriter-effect";
+import { lang } from "@/app/Constants/constants";
+import { useSearchParams } from "next/navigation";
 // Components
 
-const TypeEffect = () => {
+const TypeEffect = (ctx: any) => {
+  const searchParams = useSearchParams();
+  const currLang = searchParams.get("lang") || "en";
+
   return (
     <>
       <Typewriter
         options={{
-          strings: [
-            "Mid Level FrontEnd Web Developer .",
-            "Junior BackEnd Developer .",
-            "Working Form Home ( Remote )  .",
-            "Junior Full-Stack Web Developer .",
-            "Learning right now Node.Js & Express.Js .",
-            "Trying To be MERN Stack Web Developer .",
-          ],
+          strings: lang(currLang).skills as string[],
           autoStart: true,
           loop: true,
           wrapperClassName: styles.wrapper_x,

@@ -13,6 +13,8 @@ import styles from "./home.module.css";
 
 // Components
 import TypeEffect from "./Route_ClientComponents/Home/TypeEffect/TypeEffect";
+import { useRouter } from "next/router";
+import { lang } from "./Constants/constants";
 // Components
 
 export const metadata: Metadata = {
@@ -20,12 +22,13 @@ export const metadata: Metadata = {
   description: "Im Ali Goodarzi , Im Mid-Level FrontEnd Web Developer",
 };
 
-const page = () => {
+const page = (ctx: any) => {
+  const currLang = ctx?.searchParams?.lang || "en";
   return (
     <div
       className={`${styles.homeContainer} w-full h-full flex flex-col items-center justify-center`}
     >
-      <p className={`${styles.myName}`}>Ali Goodarzi</p>
+      <p className={`${styles.myName}`}>{lang(currLang).name}</p>
       <TypeEffect />
     </div>
   );
