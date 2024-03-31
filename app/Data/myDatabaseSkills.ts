@@ -7,7 +7,7 @@ export const myDatabaseSkills = [
   {
     id: "backend 4",
     name: "NoSQL => MongoDB",
-    value: 30,
+    value: 60,
   },
   {
     id: "backend 6",

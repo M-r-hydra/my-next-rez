@@ -2,7 +2,7 @@ export const myApiWritingSkills = [
   {
     id: "backend 12",
     name: "REST Api",
-    value: 70,
+    value: 90,
   },
   {
     id: "backend 5",

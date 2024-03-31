@@ -32,17 +32,17 @@ export const myFrontEndSkills = [
   },
   {
     id: "frontEnd10",
-    name: "Redux(TK|Thunk|Saga )",
+    name: "Redux( TK|Thunk|Saga )",
+    value: 80,
+  },
+  {
+    id: "frontEnd8",
+    name: "Next.Js ( .tsx )",
     value: 80,
   },
   {
     id: "frontEnd9",
     name: "ReactStrap + Bootstrap",
     value: 65,
-  },
-  {
-    id: "frontEnd8",
-    name: "Next.Js ( .tsx )",
-    value: 60,
   },
 ];
