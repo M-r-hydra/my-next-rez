@@ -28,6 +28,7 @@ import { myDatabaseSkills } from "@/app/Data/myDatabaseSkills";
 import { myMobileSkills } from "@/app/Data/myMobileSkills";
 import { myDocumentationSkills } from "@/app/Data/myDocumentationSkills";
 import { myApiWritingSkills } from "@/app/Data/myApiWritingSkills";
+import { extraFrontEndSkills } from "@/app/Data/extraFrontEndSkills";
 // Data
 
 export const metadata: Metadata = {
@@ -82,6 +83,18 @@ const page = () => {
         </p>
         <div className={`${styles.skillsProgressContainer} w-full `}>
           {myFrontEndSkills.map((item) => {
+            return (
+              <CardForSkills key={item.id} item={item} themeColor={currTheme} />
+            );
+          })}
+        </div>
+      </div>
+      <div className={`${styles.selfSkills} w-full`}>
+        <p className={styles.containerName}>
+          <span style={{ color: currTheme }}>Extra-FrontEnd </span> Skills
+        </p>
+        <div className={`${styles.skillsProgressContainer} w-full `}>
+          {extraFrontEndSkills.map((item) => {
             return (
               <CardForSkills key={item.id} item={item} themeColor={currTheme} />
             );
