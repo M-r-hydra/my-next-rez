@@ -14,4 +14,9 @@ export const extraFrontEndSkills = [
     name: "Web-Components",
     value: 50,
   },
+  {
+    id: "ex-4",
+    name: "Micro-FrontEnd , Module federation",
+    value: 30,
+  },
 ];
