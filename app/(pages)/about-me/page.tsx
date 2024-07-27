@@ -3,7 +3,7 @@ import { Metadata } from "next";
 // Next
 
 // React
-import React from "react";
+import React, { useEffect } from "react";
 // React
 
 // CSS
@@ -18,11 +18,6 @@ import ServicesCard from "./ServicesCard/ServicesCard";
 import { myServices } from "@/app/Data/myServices";
 import { currTheme } from "@/app/Data/currTheme";
 // Data
-
-export const metadata: Metadata = {
-  title: "About Ali Goodarzi",
-  description: "Im Ali Goodarzi , Im Mid-Level FrontEnd Web Developer",
-};
 
 const page = () => {
   return (
