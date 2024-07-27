@@ -14,9 +14,4 @@ export const extraFrontEndSkills = [
     name: "Web-Components",
     value: 50,
   },
-  {
-    id: "ex-3",
-    name: "Web-Components",
-    value: 50,
-  },
 ];
