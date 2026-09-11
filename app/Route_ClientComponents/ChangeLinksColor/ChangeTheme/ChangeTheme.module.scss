@@ -1,17 +1,17 @@
 .themeContainer {
-  width: min(220px, calc(100vw - 2rem));
+  width: 200px !important;
   padding: 1.25rem;
   border-radius: 1.25rem;
 
   position: fixed;
-  top: 2.5rem;
+  top: 1rem;
   right: 1rem;
   z-index: 50;
 
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  gap: 1.25rem;
+  gap: 2px;
 
   background: linear-gradient(145deg, #24282f, #1b1e23);
   border: 1px solid rgba(255, 255, 255, 0.05);
@@ -29,8 +29,7 @@
   @media (max-width: 480px) {
     top: 1rem;
     right: 1rem;
-    left: 1rem;
-    width: auto;
+    right: 1rem;
   }
 }
 
@@ -53,7 +52,7 @@
 .themesColorsContainer {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 1rem;
+  gap: 6px;
 
   width: 100%;
   padding: 0.25rem;
@@ -62,7 +61,7 @@
 /* ───────── COLOR DOT ───────── */
 
 .colorDot {
-  --dot-size: 28px;
+  --dot-size: 22px;
 
   width: var(--dot-size);
   height: var(--dot-size);
