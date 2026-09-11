@@ -10,12 +10,10 @@ import styles from "./TypeEffect.module.css";
 // Components
 import Typewriter from "typewriter-effect";
 import { lang } from "@/app/Constants/constants";
-import { useSearchParams } from "next/navigation";
 // Components
 
-const TypeEffect = (ctx: any) => {
-  const searchParams = useSearchParams();
-  const currLang = searchParams.get("lang") || "en";
+const TypeEffect = () => {
+  const currLang = "en";
 
   return (
     <>
