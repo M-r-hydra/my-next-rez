@@ -17,30 +17,30 @@ export const myServices: {
 }[] = [
   {
     id: "service-1",
-    name: "FrontEnd Web Development",
+    name: "Frontend Development",
     ImageData: AiOutlineHtml5,
     content:
-      "Modern and mobile-ready website with newest Technology such as React.js .",
+      "Creating fast, responsive, and user-focused web interfaces with modern technologies such as React.js, Next.js, and TypeScript.",
   },
   {
     id: "service-2",
-    name: "Backend Web Development",
+    name: "Backend Development",
     ImageData: FaNodeJs,
     content:
-      "Developing Large-Scale Backend With Javascript Ecosystem Such As : Node.js & Express.Js .",
+      "Engineering robust and scalable server-side applications and APIs using Node.js, NestJS, Express.js, and modern database technologies.",
   },
   {
     id: "service-3",
-    name: "build your dream PC",
+    name: "Custom PC Building",
     ImageData: MdComputer,
     content:
-      "I can help you to build Your Dream PC & help you to buy best hardware on your money .",
+      "Designing customized PC builds that deliver the best balance of performance, quality, and value for your specific needs and budget.",
   },
   {
     id: "service-4",
-    name: "system repair",
+    name: "System Repair & Optimization",
     ImageData: GiAutoRepair,
     content:
-      "Repairing old systems are so mad , I can help you to repair it and make it fresh .",
+      "Troubleshooting, repairing, and optimizing computer systems to improve performance, reliability, and overall user experience.",
   },
 ];
