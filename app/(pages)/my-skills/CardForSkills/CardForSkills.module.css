@@ -7,9 +7,8 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  transition: all 0.3s ease;
   position: relative;
-  /* Neumorphic shadows */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 8px 8px 18px rgba(0, 0, 0, 0.6), -8px -8px 18px rgba(255, 255, 255, 0.04);
 }
 .cardForSkills:hover {
@@ -17,22 +16,29 @@
   transform: translateY(-2px);
 }
 .cardForSkills {
-  /* ───────── HEADER ───────── */
+  /* HEADER */
 }
 .cardForSkills .aboutCurr {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 0.75rem;
+  min-width: 0;
 }
 .cardForSkills .aboutCurr .nameContainer {
+  min-width: 0;
   font-size: 1rem;
   font-weight: 600;
   color: #fff;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .cardForSkills .aboutCurr .nameContainer span {
   color: inherit;
 }
 .cardForSkills .aboutCurr .levelContainer {
+  flex-shrink: 0;
   font-size: 0.75rem;
   font-weight: 600;
   padding: 0.3rem 0.7rem;
@@ -44,7 +50,7 @@
   letter-spacing: 0.5px;
 }
 .cardForSkills {
-  /* ───────── PROGRESS BAR ───────── */
+  /* PROGRESS */
 }
 .cardForSkills .likeProgress {
   width: 100%;
@@ -63,7 +69,76 @@
   transition: width 1.2s ease-out;
 }
 
-/* ───────── ANIMATION ───────── */
+/* ─────────────────────────────
+   TABLET
+───────────────────────────── */
+@media (max-width: 768px) {
+  .cardForSkills {
+    padding: 1rem 1.15rem;
+    border-radius: 17px;
+    gap: 0.8rem;
+    box-shadow: 6px 6px 14px rgba(0, 0, 0, 0.55), -6px -6px 14px rgba(255, 255, 255, 0.035);
+  }
+  .cardForSkills:hover {
+    transform: translateY(-1px);
+    box-shadow: 8px 8px 18px rgba(0, 0, 0, 0.6), -8px -8px 18px rgba(255, 255, 255, 0.045);
+  }
+  .cardForSkills .aboutCurr {
+    gap: 0.5rem;
+  }
+  .cardForSkills .aboutCurr .nameContainer {
+    font-size: 0.95rem;
+  }
+  .cardForSkills .aboutCurr .levelContainer {
+    font-size: 0.7rem;
+    padding: 0.28rem 0.6rem;
+  }
+  .cardForSkills .likeProgress {
+    height: 9px;
+  }
+}
+/* ─────────────────────────────
+   MOBILE
+───────────────────────────── */
+@media (max-width: 480px) {
+  .cardForSkills {
+    padding: 0.85rem 1rem;
+    border-radius: 15px;
+    gap: 0.7rem;
+  }
+  .cardForSkills .aboutCurr {
+    align-items: flex-start;
+  }
+  .cardForSkills .aboutCurr .nameContainer {
+    font-size: 0.9rem;
+  }
+  .cardForSkills .aboutCurr .levelContainer {
+    font-size: 0.65rem;
+    padding: 0.25rem 0.55rem;
+    letter-spacing: 0.35px;
+  }
+  .cardForSkills .likeProgress {
+    height: 8px;
+  }
+}
+/* ─────────────────────────────
+   VERY SMALL PHONES
+───────────────────────────── */
+@media (max-width: 360px) {
+  .cardForSkills {
+    padding: 0.75rem 0.85rem;
+  }
+  .cardForSkills .aboutCurr .nameContainer {
+    font-size: 0.85rem;
+  }
+  .cardForSkills .aboutCurr .levelContainer {
+    font-size: 0.6rem;
+    padding: 0.22rem 0.5rem;
+  }
+  .cardForSkills .likeProgress {
+    height: 7px;
+  }
+}
 @keyframes progress-animation {
   from {
     background-position: 0%;
