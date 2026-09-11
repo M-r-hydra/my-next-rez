@@ -16,7 +16,7 @@ export const extraFrontEndSkills = [
   },
   {
     id: "ex-4",
-    name: "Micro-FrontEnd , Module federation",
-    value: 30,
+    name: "Micro-FrontEnd ",
+    value: 50,
   },
 ];

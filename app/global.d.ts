@@ -15,20 +15,38 @@ declare module "*.svg" {
 declare module "*.webp" {
   export default "" as string;
 }
-// For CSS
+// For CSS Module
 declare module "*.module.css" {
   const classes: { [key: string]: string };
   export default classes;
 }
 
-// For LESS
+// For CSS
+declare module "*.css" {
+  const classes: { [key: string]: string };
+  export default classes;
+}
+
+// For LESS Module
 declare module "*.module.less" {
   const classes: { [key: string]: string };
   export default classes;
 }
 
-// For SCSS
+// For LESS
+declare module "*.less" {
+  const classes: { [key: string]: string };
+  export default classes;
+}
+
+// For SCSS Module
 declare module "*.module.scss" {
+  const classes: { [key: string]: string };
+  export default classes;
+}
+
+// For SCSS
+declare module "*.scss" {
   const classes: { [key: string]: string };
   export default classes;
 }

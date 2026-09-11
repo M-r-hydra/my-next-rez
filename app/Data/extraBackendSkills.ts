@@ -5,12 +5,17 @@ export const extraBackendSkills = [
     value: 80,
   },
   {
-    id: "exb1",
+    id: "exb2",
+    name: "Sequelize",
+    value: 60,
+  },
+  {
+    id: "exb3",
     name: "Prisma",
     value: 40,
   },
   {
-    id: "exb2",
+    id: "exb4",
     name: "Drizzle",
     value: 30,
   },

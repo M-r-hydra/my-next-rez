@@ -1,6 +1,5 @@
 .myEducationContainer {
   overflow-y: auto;
-  animation: fade-in 1s;
   display: grid;
 
   scrollbar-width: thin;
@@ -13,11 +12,3 @@
   gap: 16px;
 }
 
-@keyframes fade-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 100;
-  }
-}

@@ -30,6 +30,7 @@ import { myDocumentationSkills } from "@/app/Data/myDocumentationSkills";
 import { myApiWritingSkills } from "@/app/Data/myApiWritingSkills";
 import { extraFrontEndSkills } from "@/app/Data/extraFrontEndSkills";
 import { extraBackendSkills } from "@/app/Data/extraBackendSkills";
+import { Fade } from "react-awesome-reveal";
 // Data
 
 export const metadata: Metadata = {
@@ -39,195 +40,241 @@ export const metadata: Metadata = {
 
 const page = () => {
   return (
-    <div
-      className={`${styles.mySkillsContainer} w-full h-full flex flex-col items-center  py-4 px-8`}
-    >
-      <div className={`${styles.selfSkills} w-full`}>
-        <p className={styles.containerName}>
-          <span style={{ color: currTheme }} data-changeable={"true"}>
-            My Self
-          </span>{" "}
-          Skills
-        </p>
-        <div className={`${styles.skillsProgressContainer} w-full `}>
-          {mySelfSkills.map((item) => {
-            return (
-              <CardForSkills key={item.id} item={item} themeColor={currTheme} />
-            );
-          })}
+    <Fade className="w-full h-full" duration={200}>
+      <div
+        className={`${styles.mySkillsContainer} w-full h-full flex flex-col items-center  py-4 px-8`}
+      >
+        <div className={`${styles.selfSkills} w-full`}>
+          <p className={styles.containerName}>
+            <span style={{ color: currTheme }} data-changeable={"true"}>
+              My Self
+            </span>{" "}
+            Skills
+          </p>
+          <div className={`${styles.skillsProgressContainer} w-full `}>
+            {mySelfSkills.map((item) => {
+              return (
+                <CardForSkills
+                  key={item.id}
+                  item={item}
+                  themeColor={currTheme}
+                />
+              );
+            })}
+          </div>
+        </div>
+        <div className={`${styles.selfSkills} w-full`}>
+          <p className={styles.containerName}>
+            <span style={{ color: currTheme }} data-changeable={"true"}>
+              Basic
+            </span>{" "}
+            Skills
+          </p>
+          <div className={`${styles.skillsProgressContainer} w-full `}>
+            {myBasicSkills.map((item) => {
+              return (
+                <CardForSkills
+                  key={item.id}
+                  item={item}
+                  themeColor={currTheme}
+                />
+              );
+            })}
+          </div>
+        </div>
+        <div className={`${styles.selfSkills} w-full`}>
+          <p className={styles.containerName}>
+            <span style={{ color: currTheme }} data-changeable={"true"}>
+              Programming
+            </span>{" "}
+            Skills
+          </p>
+          <div className={`${styles.skillsProgressContainer} w-full `}>
+            {myProgrammingLanguageSkills.map((item) => {
+              return (
+                <CardForSkills
+                  key={item.id}
+                  item={item}
+                  themeColor={currTheme}
+                />
+              );
+            })}
+          </div>
+        </div>
+        <div className={`${styles.selfSkills} w-full`}>
+          <p className={styles.containerName}>
+            <span style={{ color: currTheme }} data-changeable={"true"}>
+              Front-End{" "}
+            </span>{" "}
+            Skills
+          </p>
+          <div className={`${styles.skillsProgressContainer} w-full `}>
+            {myFrontEndSkills.map((item) => {
+              return (
+                <CardForSkills
+                  key={item.id}
+                  item={item}
+                  themeColor={currTheme}
+                />
+              );
+            })}
+          </div>
+        </div>
+        <div className={`${styles.selfSkills} w-full`}>
+          <p className={styles.containerName}>
+            <span style={{ color: currTheme }} data-changeable={"true"}>
+              Extra-FrontEnd{" "}
+            </span>{" "}
+            Skills
+          </p>
+          <div className={`${styles.skillsProgressContainer} w-full `}>
+            {extraFrontEndSkills.map((item) => {
+              return (
+                <CardForSkills
+                  key={item.id}
+                  item={item}
+                  themeColor={currTheme}
+                />
+              );
+            })}
+          </div>
+        </div>
+        <div className={`${styles.selfSkills} w-full`}>
+          <p className={styles.containerName}>
+            <span style={{ color: currTheme }} data-changeable={"true"}>
+              Back-End
+            </span>{" "}
+            Skills{" "}
+            <span style={{ color: currTheme }} data-changeable={"true"}>
+              {" "}
+              {/* {"( Learning )"}{" "} */}
+            </span>
+          </p>
+          <div className={`${styles.skillsProgressContainer} w-full `}>
+            {myBackEndSkills.map((item) => {
+              return (
+                <CardForSkills
+                  key={item.id}
+                  item={item}
+                  themeColor={currTheme}
+                />
+              );
+            })}
+          </div>
+        </div>
+        <div className={`${styles.selfSkills} w-full`}>
+          <p className={styles.containerName}>
+            <span style={{ color: currTheme }} data-changeable={"true"}>
+              Data Base{" "}
+            </span>{" "}
+            Skills
+            <span style={{ color: currTheme }} data-changeable={"true"}>
+              {" "}
+              {"( Learning )"}{" "}
+            </span>
+          </p>
+          <div className={`${styles.skillsProgressContainer} w-full `}>
+            {myDatabaseSkills.map((item) => {
+              return (
+                <CardForSkills
+                  key={item.id}
+                  item={item}
+                  themeColor={currTheme}
+                />
+              );
+            })}
+          </div>
+        </div>
+        <div className={`${styles.selfSkills} w-full`}>
+          <p className={styles.containerName}>
+            <span style={{ color: currTheme }} data-changeable={"true"}>
+              Extra-Backend{" "}
+            </span>{" "}
+            Skills
+          </p>
+          <div className={`${styles.skillsProgressContainer} w-full `}>
+            {extraBackendSkills.map((item) => {
+              return (
+                <CardForSkills
+                  key={item.id}
+                  item={item}
+                  themeColor={currTheme}
+                />
+              );
+            })}
+          </div>
+        </div>
+        <div className={`${styles.selfSkills} w-full`}>
+          <p className={styles.containerName}>
+            <span style={{ color: currTheme }} data-changeable={"true"}>
+              Mobile Developing
+            </span>{" "}
+            Skills
+            <span style={{ color: currTheme }} data-changeable={"true"}>
+              {" "}
+              {"( Learning )"}{" "}
+            </span>
+          </p>
+          <div className={`${styles.skillsProgressContainer} w-full `}>
+            {myMobileSkills.map((item) => {
+              return (
+                <CardForSkills
+                  key={item.id}
+                  item={item}
+                  themeColor={currTheme}
+                />
+              );
+            })}
+          </div>
+        </div>
+        <div className={`${styles.selfSkills} w-full`}>
+          <p className={styles.containerName}>
+            <span style={{ color: currTheme }} data-changeable={"true"}>
+              Documenting{" "}
+            </span>{" "}
+            Skills
+            <span style={{ color: currTheme }} data-changeable={"true"}>
+              {" "}
+              {/* {"( Learning )"}{" "} */}
+            </span>
+          </p>
+          <div className={`${styles.skillsProgressContainer} w-full `}>
+            {myDocumentationSkills.map((item) => {
+              return (
+                <CardForSkills
+                  key={item.id}
+                  item={item}
+                  themeColor={currTheme}
+                />
+              );
+            })}
+          </div>
+        </div>
+        <div className={`${styles.selfSkills} w-full`}>
+          <p className={styles.containerName}>
+            <span style={{ color: currTheme }} data-changeable={"true"}>
+              Api Writing{" "}
+            </span>{" "}
+            Skills
+            <span style={{ color: currTheme }} data-changeable={"true"}>
+              {" "}
+              {/* {"( Learning )"}{" "} */}
+            </span>
+          </p>
+          <div className={`${styles.skillsProgressContainer} w-full `}>
+            {myApiWritingSkills.map((item) => {
+              return (
+                <CardForSkills
+                  key={item.id}
+                  item={item}
+                  themeColor={currTheme}
+                />
+              );
+            })}
+          </div>
         </div>
       </div>
-      <div className={`${styles.selfSkills} w-full`}>
-        <p className={styles.containerName}>
-          <span style={{ color: currTheme }} data-changeable={"true"}>
-            Basic
-          </span>{" "}
-          Skills
-        </p>
-        <div className={`${styles.skillsProgressContainer} w-full `}>
-          {myBasicSkills.map((item) => {
-            return (
-              <CardForSkills key={item.id} item={item} themeColor={currTheme} />
-            );
-          })}
-        </div>
-      </div>
-      <div className={`${styles.selfSkills} w-full`}>
-        <p className={styles.containerName}>
-          <span style={{ color: currTheme }} data-changeable={"true"}>
-            Programming
-          </span>{" "}
-          Skills
-        </p>
-        <div className={`${styles.skillsProgressContainer} w-full `}>
-          {myProgrammingLanguageSkills.map((item) => {
-            return (
-              <CardForSkills key={item.id} item={item} themeColor={currTheme} />
-            );
-          })}
-        </div>
-      </div>
-      <div className={`${styles.selfSkills} w-full`}>
-        <p className={styles.containerName}>
-          <span style={{ color: currTheme }} data-changeable={"true"}>
-            Front-End{" "}
-          </span>{" "}
-          Skills
-        </p>
-        <div className={`${styles.skillsProgressContainer} w-full `}>
-          {myFrontEndSkills.map((item) => {
-            return (
-              <CardForSkills key={item.id} item={item} themeColor={currTheme} />
-            );
-          })}
-        </div>
-      </div>
-      <div className={`${styles.selfSkills} w-full`}>
-        <p className={styles.containerName}>
-          <span style={{ color: currTheme }} data-changeable={"true"}>
-            Extra-FrontEnd{" "}
-          </span>{" "}
-          Skills
-        </p>
-        <div className={`${styles.skillsProgressContainer} w-full `}>
-          {extraFrontEndSkills.map((item) => {
-            return (
-              <CardForSkills key={item.id} item={item} themeColor={currTheme} />
-            );
-          })}
-        </div>
-      </div>
-      <div className={`${styles.selfSkills} w-full`}>
-        <p className={styles.containerName}>
-          <span style={{ color: currTheme }} data-changeable={"true"}>
-            Back-End
-          </span>{" "}
-          Skills{" "}
-          <span style={{ color: currTheme }} data-changeable={"true"}>
-            {" "}
-            {/* {"( Learning )"}{" "} */}
-          </span>
-        </p>
-        <div className={`${styles.skillsProgressContainer} w-full `}>
-          {myBackEndSkills.map((item) => {
-            return (
-              <CardForSkills key={item.id} item={item} themeColor={currTheme} />
-            );
-          })}
-        </div>
-      </div>
-      <div className={`${styles.selfSkills} w-full`}>
-        <p className={styles.containerName}>
-          <span style={{ color: currTheme }} data-changeable={"true"}>
-            Data Base{" "}
-          </span>{" "}
-          Skills
-          <span style={{ color: currTheme }} data-changeable={"true"}>
-            {" "}
-            {"( Learning )"}{" "}
-          </span>
-        </p>
-        <div className={`${styles.skillsProgressContainer} w-full `}>
-          {myDatabaseSkills.map((item) => {
-            return (
-              <CardForSkills key={item.id} item={item} themeColor={currTheme} />
-            );
-          })}
-        </div>
-      </div>
-      <div className={`${styles.selfSkills} w-full`}>
-        <p className={styles.containerName}>
-          <span style={{ color: currTheme }} data-changeable={"true"}>
-            Extra-Backend{" "}
-          </span>{" "}
-          Skills
-        </p>
-        <div className={`${styles.skillsProgressContainer} w-full `}>
-          {extraBackendSkills.map((item) => {
-            return (
-              <CardForSkills key={item.id} item={item} themeColor={currTheme} />
-            );
-          })}
-        </div>
-      </div>
-      <div className={`${styles.selfSkills} w-full`}>
-        <p className={styles.containerName}>
-          <span style={{ color: currTheme }} data-changeable={"true"}>
-            Mobile Developing
-          </span>{" "}
-          Skills
-          <span style={{ color: currTheme }} data-changeable={"true"}>
-            {" "}
-            {"( Learning )"}{" "}
-          </span>
-        </p>
-        <div className={`${styles.skillsProgressContainer} w-full `}>
-          {myMobileSkills.map((item) => {
-            return (
-              <CardForSkills key={item.id} item={item} themeColor={currTheme} />
-            );
-          })}
-        </div>
-      </div>
-      <div className={`${styles.selfSkills} w-full`}>
-        <p className={styles.containerName}>
-          <span style={{ color: currTheme }} data-changeable={"true"}>
-            Documenting{" "}
-          </span>{" "}
-          Skills
-          <span style={{ color: currTheme }} data-changeable={"true"}>
-            {" "}
-            {/* {"( Learning )"}{" "} */}
-          </span>
-        </p>
-        <div className={`${styles.skillsProgressContainer} w-full `}>
-          {myDocumentationSkills.map((item) => {
-            return (
-              <CardForSkills key={item.id} item={item} themeColor={currTheme} />
-            );
-          })}
-        </div>
-      </div>
-      <div className={`${styles.selfSkills} w-full`}>
-        <p className={styles.containerName}>
-          <span style={{ color: currTheme }} data-changeable={"true"}>
-            Api Writing{" "}
-          </span>{" "}
-          Skills
-          <span style={{ color: currTheme }} data-changeable={"true"}>
-            {" "}
-            {/* {"( Learning )"}{" "} */}
-          </span>
-        </p>
-        <div className={`${styles.skillsProgressContainer} w-full `}>
-          {myApiWritingSkills.map((item) => {
-            return (
-              <CardForSkills key={item.id} item={item} themeColor={currTheme} />
-            );
-          })}
-        </div>
-      </div>
-    </div>
+    </Fade>
   );
 };
 

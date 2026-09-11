@@ -5,18 +5,18 @@ export const myBasicSkills = [
     value: 90,
   },
   {
+    id: "git",
+    name: "GIT",
+    value: 80,
+  },
+  {
     id: "linux",
     name: "Linux",
     value: 70,
   },
   {
-    id: "git",
-    name: "GIT",
-    value: 70,
-  },
-  {
     id: "docker",
     name: "Docker",
-    value: 70,
+    value: 60,
   },
 ];

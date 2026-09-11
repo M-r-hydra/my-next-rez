@@ -20,6 +20,7 @@ import CardForEducation from "./CardForEducation/CardForEducation";
 
 // Theme
 import { currTheme } from "@/app/Data/currTheme";
+import { Fade } from "react-awesome-reveal";
 // Theme
 
 export const metadata: Metadata = {
@@ -29,13 +30,19 @@ export const metadata: Metadata = {
 
 const page = () => {
   return (
-    <div className={`${styles.myEducationContainer} w-full h-full py-4 px-8`}>
-      {myEducation.map((item) => {
-        return (
-          <CardForEducation key={item.id} item={item} themeColor={currTheme} />
-        );
-      })}
-    </div>
+    <Fade className="w-full h-full" duration={200}>
+      <div className={`${styles.myEducationContainer} w-full h-full py-4 px-8`}>
+        {myEducation.map((item) => {
+          return (
+            <CardForEducation
+              key={item.id}
+              item={item}
+              themeColor={currTheme}
+            />
+          );
+        })}
+      </div>
+    </Fade>
   );
 };
 

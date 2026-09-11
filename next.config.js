@@ -1,4 +1,11 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {
+  // for STATIC BUILD
+  output: "export",
+  images: {
+    unoptimized: true,
+  },
+  // for STATIC BUILD
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

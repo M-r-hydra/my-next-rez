@@ -11,12 +11,13 @@
   position: relative;
   /* Neumorphic shadows */
   box-shadow: 8px 8px 18px rgba(0, 0, 0, 0.6), -8px -8px 18px rgba(255, 255, 255, 0.04);
-  /* ───────── HEADER ───────── */
-  /* ───────── PROGRESS BAR ───────── */
 }
 .cardForSkills:hover {
   box-shadow: 12px 12px 24px rgba(0, 0, 0, 0.7), -12px -12px 24px rgba(255, 255, 255, 0.06);
   transform: translateY(-2px);
+}
+.cardForSkills {
+  /* ───────── HEADER ───────── */
 }
 .cardForSkills .aboutCurr {
   display: flex;
@@ -41,6 +42,9 @@
   box-shadow: inset 3px 3px 6px rgba(0, 0, 0, 0.6), inset -3px -3px 6px rgba(255, 255, 255, 0.05);
   text-transform: uppercase;
   letter-spacing: 0.5px;
+}
+.cardForSkills {
+  /* ───────── PROGRESS BAR ───────── */
 }
 .cardForSkills .likeProgress {
   width: 100%;

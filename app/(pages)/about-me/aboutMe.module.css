@@ -1,5 +1,4 @@
 .aboutMeContainer {
-  animation: fade-in 1s;
   scrollbar-width: thin;
   scrollbar-color: #555 transparent;
   overflow-y: auto;
@@ -14,13 +13,4 @@
 .aboutMeContainer .aboutMe {
   color: #fff;
   font-size: 1.3rem;
-}
-
-@keyframes fade-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 100;
-  }
 }/*# sourceMappingURL=aboutMe.module.css.map */
