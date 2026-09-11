@@ -1,95 +1,234 @@
+@charset "UTF-8";
 .mySkillsContainer {
+  width: 100%;
   min-height: 100vh;
+  padding: 1.5rem 1.5rem 4rem;
   overflow-y: auto;
-  padding-bottom: 4rem;
-  background: linear-gradient(135deg, #1d1e21 0%, #2b2f33 100%);
+  overflow-x: hidden;
+  background: linear-gradient(135deg, #1d1e21 0%, #24272b 50%, #1d1e21 100%);
   scrollbar-width: thin;
   scrollbar-color: #555 transparent;
 }
 .mySkillsContainer::-webkit-scrollbar {
   width: 6px;
 }
+.mySkillsContainer::-webkit-scrollbar-track {
+  background: transparent;
+}
 .mySkillsContainer::-webkit-scrollbar-thumb {
   background: #555;
   border-radius: 10px;
 }
+.mySkillsContainer::-webkit-scrollbar-thumb:hover {
+  background: #666;
+}
+.mySkillsContainer {
+  /* ─────────────────────────────
+     SKILL GROUP
+  ───────────────────────────── */
+}
 .mySkillsContainer .selfSkills {
-  margin-top: 4rem;
-  padding: 2rem;
-  border-radius: 16px;
-  background: rgba(255, 255, 255, 0.04);
-  backdrop-filter: blur(6px);
-  transition: transform 0.3s ease;
+  width: 100%;
+  margin: 2rem auto 0;
+  padding: 1.75rem;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.035);
+  border: 1px solid rgba(255, 255, 255, 0.045);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18), inset 0 1px 0 rgba(255, 255, 255, 0.025);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+.mySkillsContainer .selfSkills:first-of-type {
+  margin-top: 0;
 }
 .mySkillsContainer .selfSkills:hover {
   transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.045);
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.24), inset 0 1px 0 rgba(255, 255, 255, 0.035);
 }
-.mySkillsContainer .selfSkills:first-of-type {
-  margin-top: 1.5rem;
+.mySkillsContainer .selfSkills {
+  /* ─────────────────────────
+     GROUP TITLE
+  ───────────────────────── */
 }
 .mySkillsContainer .selfSkills .containerName {
-  font-size: 2rem;
-  font-weight: 700;
-  color: #fff;
-  margin-bottom: 1.5rem;
-  position: relative;
-  display: inline-flex;
+  width: 100%;
+  margin: 0 0 1.5rem;
+  display: flex;
   align-items: center;
   gap: 0.75rem;
+  font-size: 1.75rem;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #fff;
+  /* title line */
 }
 .mySkillsContainer .selfSkills .containerName::after {
   content: "";
   flex: 1;
   height: 1px;
-  background: linear-gradient(to right, rgba(255, 255, 255, 0.4), transparent);
-  margin-left: 1rem;
+  margin-left: 0.5rem;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.25), transparent);
 }
 .mySkillsContainer .selfSkills .containerName span:nth-child(2) {
-  font-size: 0.85rem;
-  opacity: 0.7;
+  flex-shrink: 0;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.55);
+  white-space: nowrap;
+}
+.mySkillsContainer .selfSkills {
+  /* ─────────────────────────
+     SKILLS GRID
+  ───────────────────────── */
 }
 .mySkillsContainer .selfSkills .skillsProgressContainer {
+  width: 100%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1.25rem;
+  /*
+   * Important:
+   * minmax(0, 1fr) prevents long skill names
+   * from forcing the grid wider.
+   */
 }
 
-/* Animations */
-/* Responsive */
+/* ─────────────────────────────
+   LARGE TABLET / SMALL DESKTOP
+───────────────────────────── */
 @media (max-width: 1200px) {
-  .skillsProgressContainer {
-    grid-template-columns: repeat(2, 1fr) !important;
+  .mySkillsContainer {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
   }
-}
-@media (max-width: 800px) {
-  .skillsProgressContainer {
-    grid-template-columns: 1fr !important;
-  }
-  .selfSkills {
+  .mySkillsContainer .selfSkills {
     padding: 1.5rem;
   }
+  .mySkillsContainer .selfSkills .skillsProgressContainer {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+  }
 }
+/* ─────────────────────────────
+   TABLET
+───────────────────────────── */
 @media (max-width: 800px) {
+  .mySkillsContainer {
+    padding: 1rem 1rem 3rem;
+  }
+  .mySkillsContainer .selfSkills {
+    margin-top: 1.25rem;
+    padding: 1.25rem;
+    border-radius: 17px;
+  }
   .mySkillsContainer .selfSkills .containerName {
+    margin-bottom: 1.15rem;
     font-size: 1.4rem;
     line-height: 1.3;
-    display: flex;
-    flex-direction: column;
     align-items: flex-start;
-    gap: 0.35rem;
-    margin-bottom: 1.25rem;
+    flex-wrap: wrap;
+    gap: 0.4rem;
   }
   .mySkillsContainer .selfSkills .containerName::after {
+    flex-basis: 100%;
+    flex-grow: 0;
     width: 42px;
     height: 3px;
-    flex: none;
-    margin-left: 0;
-    margin-top: 0.4rem;
-    border-radius: 2px;
+    margin: 0.25rem 0 0;
+    border-radius: 999px;
     background: linear-gradient(to right, rgba(255, 255, 255, 0.6), transparent);
   }
   .mySkillsContainer .selfSkills .containerName span:nth-child(2) {
-    font-size: 0.75rem;
-    opacity: 0.6;
+    font-size: 0.72rem;
+  }
+  .mySkillsContainer .selfSkills .skillsProgressContainer {
+    grid-template-columns: 1fr;
+    gap: 0.85rem;
+  }
+}
+/* ─────────────────────────────
+   MOBILE
+───────────────────────────── */
+@media (max-width: 480px) {
+  .mySkillsContainer {
+    padding: 0.75rem 0.75rem 2.5rem;
+  }
+  .mySkillsContainer .selfSkills {
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 15px;
+  }
+  .mySkillsContainer .selfSkills:hover {
+    transform: none;
+  }
+  .mySkillsContainer .selfSkills .containerName {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+  }
+  .mySkillsContainer .selfSkills .containerName span:nth-child(2) {
+    font-size: 0.68rem;
+  }
+  .mySkillsContainer .selfSkills .skillsProgressContainer {
+    gap: 0.7rem;
+  }
+}
+/* ─────────────────────────────
+   VERY SMALL PHONES
+───────────────────────────── */
+@media (max-width: 360px) {
+  .mySkillsContainer {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  .mySkillsContainer .selfSkills {
+    padding: 0.85rem;
+  }
+  .mySkillsContainer .selfSkills .containerName {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 350px) {
+  .mySkillsContainer {
+    padding: 0.5rem 0.4rem 2rem;
+  }
+  .mySkillsContainer .selfSkills {
+    margin-top: 0.75rem;
+    padding: 0.75rem;
+    border-radius: 13px;
+  }
+  .mySkillsContainer .selfSkills .containerName {
+    width: 100%;
+    margin-bottom: 0.85rem;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 0.35rem;
+    font-size: 1rem;
+    line-height: 1.2;
+  }
+  .mySkillsContainer .selfSkills .containerName::after {
+    grid-column: 1/-1;
+    width: 35px;
+    height: 2px;
+    margin: 0.15rem 0 0;
+    border-radius: 999px;
+  }
+  .mySkillsContainer .selfSkills .containerName span:first-child {
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .mySkillsContainer .selfSkills .containerName span:nth-child(2) {
+    font-size: 0.62rem;
+    white-space: nowrap;
+  }
+  .mySkillsContainer .selfSkills .skillsProgressContainer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.65rem;
   }
 }/*# sourceMappingURL=mySkills.module.css.map */

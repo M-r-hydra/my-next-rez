@@ -1,7 +1,7 @@
 export const mySelfSkills = [
   {
     id: "self-1",
-    name: "Lang (Per) Native",
+    name: "Persian (native)",
     value: 100,
   },
   {
@@ -16,7 +16,12 @@ export const mySelfSkills = [
   },
   {
     id: "self-4",
-    name: "Lang (Eng)",
+    name: "English => Tofel 5.0",
     value: 70,
+  },
+  {
+    id: "self-666",
+    name: "Italian => A2",
+    value: 50,
   },
 ];

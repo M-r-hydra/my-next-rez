@@ -208,3 +208,41 @@
     background-position: -300%;
   }
 }
+
+@media (max-width: 350px) {
+  .cardForSkills {
+    width: 100%;
+
+    padding: 0.7rem 0.8rem;
+    border-radius: 13px;
+
+    gap: 0.6rem;
+
+    .aboutCurr {
+      width: 100%;
+      min-width: 0;
+
+      gap: 0.4rem;
+
+      .nameContainer {
+        min-width: 0;
+        max-width: 100%;
+
+        font-size: 0.8rem;
+      }
+
+      .levelContainer {
+        flex-shrink: 0;
+
+        font-size: 0.55rem;
+        padding: 0.2rem 0.45rem;
+
+        letter-spacing: 0.25px;
+      }
+    }
+
+    .likeProgress {
+      height: 6px;
+    }
+  }
+}
