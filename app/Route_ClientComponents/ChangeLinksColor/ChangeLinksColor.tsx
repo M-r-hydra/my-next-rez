@@ -10,10 +10,11 @@ import styles from "./ChangeLinksColor.module.css";
 // Modules
 import { usePathname } from "next/navigation";
 import ChangeTheme from "./ChangeTheme/ChangeTheme";
+import { currTheme } from "@/app/Data/currTheme";
 // Modules
 
 const ChangeLinksColor = () => {
-  const [themeColor, setThemeColor] = useState<string>("rgb(238, 97, 146)");
+  const [themeColor, setThemeColor] = useState<string>(currTheme);
 
   const currPath = usePathname();
 
@@ -62,7 +63,7 @@ const ChangeLinksColor = () => {
       }
       `}
       </style>
-      <ChangeTheme setTheme={setThemeColor} />
+      <ChangeTheme setTheme={setThemeColor} currentTheme={themeColor} />
     </>
   );
 };

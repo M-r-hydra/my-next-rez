@@ -9,10 +9,12 @@ import styles from "./ChangeTheme.module.css";
 
 type ChangeThemeProps = {
   setTheme: React.Dispatch<React.SetStateAction<string>>;
+  currentTheme: string;
 };
 
 const ChangeTheme: React.FunctionComponent<ChangeThemeProps> = ({
   setTheme,
+  currentTheme,
 }) => {
   const themes = [
     {
@@ -64,15 +66,18 @@ const ChangeTheme: React.FunctionComponent<ChangeThemeProps> = ({
       solid: "#7f8c8d",
     },
   ];
+
   return (
     <div className={styles.themeContainer}>
       <p className={styles.title}>Select Theme</p>
 
       <div className={styles.themesColorsContainer}>
-        {themes.map((item) => (
+        {themes.map((item, index) => (
           <span
             key={item.id}
-            className={styles.colorDot}
+            className={`${styles.colorDot} ${item.solid === currentTheme ? styles.colorDotActive : ""}`}
+            data-tooltip-id={index <= 3 ? "my-tooltip3" : "my-tooltip2"}
+            data-tooltip-content={item.name}
             style={{
               background: item.colorCode,
               color: item.solid, // for glow ring
