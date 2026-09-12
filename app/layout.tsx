@@ -14,8 +14,8 @@ import ToCLIENT from "./Components/TOCLIENT/TOCLIENT";
 // Components
 
 export const metadata: Metadata = {
-  title: "Ali Goodarzi Personal Website",
-  description: "Developed By AliGoodarzi",
+  title: "Ali Goudarzi Personal Website",
+  description: "Developed By AliGoudarzi",
 };
 
 export default function RootLayout({

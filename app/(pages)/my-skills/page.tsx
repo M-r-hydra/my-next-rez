@@ -34,8 +34,8 @@ import { Fade } from "react-awesome-reveal";
 // Data
 
 export const metadata: Metadata = {
-  title: "Ali Goodarzi Skills",
-  description: "Im Ali Goodarzi , Im Mid-Level FrontEnd Web Developer",
+  title: "Ali Goudarzi Skills",
+  description: "Im Ali Goudarzi , Im Mid-Level FrontEnd Web Developer",
 };
 
 const page = () => {

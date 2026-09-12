@@ -24,8 +24,8 @@ import { Fade } from "react-awesome-reveal";
 // Theme
 
 export const metadata: Metadata = {
-  title: "Ali Goodarzi Education",
-  description: "Im Ali Goodarzi , Im Mid-Level FrontEnd Web Developer",
+  title: "Ali Goudarzi Education",
+  description: "Im Ali Goudarzi , Im Mid-Level FrontEnd Web Developer",
 };
 
 const page = () => {
